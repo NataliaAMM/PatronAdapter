@@ -1,0 +1,2 @@
+# PatronAdapter
+Personaje adaptado
