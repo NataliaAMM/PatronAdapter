@@ -24,6 +24,10 @@ class Misil(pygame.sprite.Sprite):
         superficie.blit(self.imagenMisil,self.rect)
 
 class Misil2(Misil):
+    def modificar(self):
+        self.imagenMisil = pygame.image.load("imagenes/esfera.png")
+        self.imagenMisil = pygame.transform.scale(self.imagenMisil, (70,70))
+        self.velocidadDisparo = 8
     def recorrido(self):
         self.rect.left=self.rect.left+(self.velocidadDisparo*1.5)
         self.rect.top=self.rect.top-self.velocidadDisparo

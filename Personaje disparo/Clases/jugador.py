@@ -34,8 +34,11 @@ class Personaje(pygame.sprite.Sprite):
     def disparar(self,x,y):
         #crea el objeto de la clase Misil
         misil = Misil2(x,y)
+        misil.modificar()
         self.listaDisparo.append(misil)
     #funcion para que se dibuje el personaje    
     def dibujar(self,superficie):
         superficie.blit(self.imgPersonaje,self.rect)
     
+
+        
